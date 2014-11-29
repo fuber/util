@@ -13,6 +13,7 @@ Transfer-Encoding: chunked
 
 `
 
+// ChunckedHeader returns an HTTP 1.1 header with transfer encoding set to chunked.
 func ChunkedHeader() string {
 	return fmt.Sprintf(HTTPHeader, time.Now().UTC().Format(TimeFormat))
 }
